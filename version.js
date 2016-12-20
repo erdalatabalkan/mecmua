@@ -18,7 +18,7 @@ $(document).ready(function() {
 	
 	function Bground(bglink) {
 		document.body.style.backgroundColor = "#f3f3f3";
-		document.body.style.backgroundImage = "url('"+bglink+"apk/ic_splash.jpg')";
+		document.body.style.backgroundImage = "url('http://"+bglink+"/apk/ic_splash.jpg')";
 	}
 
 	function Toast(t1,t2) {
@@ -33,7 +33,7 @@ $(document).ready(function() {
 
 	if(paket == "erd.mecmua") {
 		var ver		= "1.01.1";
-		var link	= "http://mecmua.ga/";
+		var link	= "mecmua.ga";
 		Bground(link);
 		Toast(ver,link);
 	}
