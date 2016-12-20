@@ -15,6 +15,10 @@ $(document).ready(function() {
 		}
 		return vars;
 	}
+	
+	function Bground(bglink) {
+		document.body.style.background = "#f3f3f3 url('"+bglink+"apk/ic_splash.jpg')";
+	}
 
 	function Toast(t1,t2) {
 		if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
@@ -29,8 +33,7 @@ $(document).ready(function() {
 	if(paket == "erd.mecmua") {
 		var ver		= "1.01.0";
 		var link	= "http://mecmua.ga/";
+		Bground(link);
 		Toast(ver,link);
-		var stil = document.body.style.background = "#f3f3f3 url('"+link+"apk/ic_splash.jpg')";
-		
 	}
 });
