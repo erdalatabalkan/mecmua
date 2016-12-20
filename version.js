@@ -16,14 +16,21 @@ function getUrlVars(){
 
 	return vars;
 }
+	
+function Toast(toast) {
+	if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+  		Android.showToast(toast);
+	}
+}
 
 var paket = getUrlVars()["pak"];
-document.write(paket);
+//document.write(paket);
 	
 	
 if(paket == "erd.mecmua") {
 	var ver= "1.04.3";
-	document.write(ver);
+	Toast(ver);
+	//document.write(ver);
 	
 }
 
