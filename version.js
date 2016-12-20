@@ -19,7 +19,7 @@ $(document).ready(function() {
 
 	function Toast(t1,t2) {
 		if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-			Android.showToast(t1);
+			Android.verToast(t1);
 			Android.linkToast(t2);
 		}
 	}
