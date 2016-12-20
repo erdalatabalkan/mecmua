@@ -17,7 +17,11 @@ function getUrlVars(){
 	return vars;
 }
 	
-
+function Toast(toast) {
+	if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+  		Android.showToast(toast);
+	}
+}
 
 var paket = getUrlVars()["pak"];
 //document.write(paket);
@@ -25,7 +29,7 @@ var paket = getUrlVars()["pak"];
 	
 if(paket == "erd.mecmua") {
 	var ver= "1043";
-	//Toast(ver);
+	Toast(ver);
 	document.write(ver);
 	
 }
