@@ -13,7 +13,6 @@ $(document).ready(function() {
 				vars[hash[0]] = hash[1];
 			}
 		}
-
 		return vars;
 	}
 
@@ -27,13 +26,10 @@ $(document).ready(function() {
 	var paket 	= getUrlVars()["pak"];
 	//document.write(paket);
 
-
 	if(paket == "erd.mecmua") {
-		var ver		= "1.04.3";
+		var ver		= "1.01.0";
 		var link	= "http://mecmua.ga/";
 		Toast(ver,link);
+		document.body.style.background = "#f3f3f3 url('"+link+"apk/ic_splash.jpg')";
 	}
-	
-	document.body.style.background = "#f3f3f3 url('"+link+"gorsel/ic_splash.jpg')";
-
 });
