@@ -4,7 +4,7 @@ var paket = getUrlVars()["pak"];
 document.write(paket);
 	
 	
-if(paket = "erd.mecmua") {
+if(paket == "erd.mecmua") {
 
 var ver= "1.04.3";
 document.write(ver);
