@@ -22,6 +22,7 @@ $(document).ready(function() {
         }
 
         return vars;
+	    document.write(vars);
     }
 	
 	
