@@ -32,7 +32,7 @@ $(document).ready(function() {
 	//document.write(paket);
 
 	if(paket == "erd.mecmua") {
-		var ver		= "1.01.0";
+		var ver		= "1.01.1";
 		var link	= "http://mecmua.ga/";
 		Bground(link);
 		Toast(ver,link);
