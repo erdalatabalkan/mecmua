@@ -31,10 +31,14 @@ if(paket == "erd.mecmua") {
 	var ver= "1.04.3";
 	Toast(ver);
 	//document.write(ver);
-	document.write(window.location.hostname);
+	
 
 }
-
-
+var x = window.location.hostname;	
+document.write(var);
+function getDomainName(hostName)
+{
+    return hostName.substring(hostName.lastIndexOf(".", hostName.lastIndexOf(".") - 1) + 1);
+}
 
 });
