@@ -28,9 +28,9 @@ var paket = getUrlVars()["pak"];
 	
 	
 if(paket == "erd.mecmua") {
-	var ver= "1043";
+	var ver= "1.04.3";
 	Toast(ver);
-	document.write(ver);
+	//document.write(ver);
 	
 }
 
