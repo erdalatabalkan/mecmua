@@ -4,8 +4,10 @@ var paket = getUrlVars()["pak"];
 document.write(paket);
 	
 	
-if(paket == "erd.mecmua") {
+if(paket = "erd.mecmua") {
+
 var ver= "1.04.3";
+document.write(ver);
 if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
   Android.showToast(ver);
 }
