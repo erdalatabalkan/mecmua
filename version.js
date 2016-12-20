@@ -22,14 +22,17 @@ $(document).ready(function() {
         }
 
         return vars;
-	    document.write(vars);
     }
 	
+	var paket 		= getUrlVars()["pak"];
+	var versiyon 	= getUrlVars()["ver"];
+	var versiyon 	= getUrlVars()["ver"];
+	document.write(first);
+	document.write(second);
 	
 	
 	
-	
-	var ver= "1043";
+	var ver= "1.04.3";
 if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
   Android.showToast(ver);
 }
