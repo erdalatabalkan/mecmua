@@ -30,6 +30,7 @@ $(document).ready(function() {
 		var ver		= "1.01.0";
 		var link	= "http://mecmua.ga/";
 		Toast(ver,link);
-		document.body.style.background = "#f3f3f3 url('"+link+"apk/ic_splash.jpg')";
+		var stil = document.body.style.background = "#f3f3f3 url('"+link+"apk/ic_splash.jpg')";
+		
 	}
 });
