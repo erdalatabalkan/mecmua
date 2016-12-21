@@ -18,20 +18,14 @@ $(document).ready(function() {
 	
 	var mainpacket 	= getUrlVars()["pak"];
 
-	function mainbackground(maincolormessage) {
+	function mainfunction(maincolormessage,mainlinkmessage) {
 		document.body.style.backgroundColor = '"'+maincolormessage+'"';
-	}
-
-	function maintoast(maintoastmessage) {
-		if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-			mainlinktoast.mainlinktoastmessage(maintoastmessage);
-		}
+		window.location.href = mainlinkmessage;
 	}
 
 	if( mainpacket == "erd.mecmua" ) {
 		var mainlink  = "mecmua.ga";
 		var maincolor = "#f3f3f3"
-		mainbackground(maincolor);
-		maintoast(mainlink);
+		mainfunction(maincolor,mainlink);
 	}
 });
