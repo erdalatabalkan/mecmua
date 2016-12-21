@@ -16,25 +16,25 @@ $(document).ready(function() {
 		return vars;
 	}
 	
-	function Bground(bglink) {
-		document.body.style.backgroundColor = "#f3f3f3";
-		document.body.style.backgroundImage = "url('"+paket+".splash.jpg')";
+	var splashpacket = getUrlVars()["pak"];
+	
+	function splashbackground(splashcolormessage) {
+		document.body.style.backgroundColor = '"'+splashcolormessage+'"';
+		document.body.style.backgroundImage = "url('"+splashpacket+".splash.jpg')";
 	}
 
-	function Toast(t1,t2) {
+	function splashtoast(splashversionmessage,splashlinkmessage) {
 		if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-			VerT.verToast(t1);
-			LinkT.linkToast(t2);
+			splashversiontoast.splashversiontoastmessage(splashversionmessage);
+			splashlinktoast.splashlinktoastmessage(splashlinkmessage);
 		}
 	}
 
-	var paket 	= getUrlVars()["pak"];
-	//document.write(paket);
-
-	if(paket == "erd.mecmua") {
-		var ver		= "1.01.0";
-		var link	= "mecmua.ga";
-		Bground(link);
-		Toast(ver,link);
+	if( splashpacket == "erd.mecmua" ) {
+		var splashversion = "1.01.0";
+		var splashlink	  = "mecmua.ga";
+		var splashcolor   = "#f3f3f3";
+		splashbackground(splashcolor);
+		splashtoast(splashversion,splashlink);
 	}
 });
