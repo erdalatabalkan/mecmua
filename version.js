@@ -18,7 +18,7 @@ $(document).ready(function() {
 	
 	function Bground(bglink) {
 		document.body.style.backgroundColor = "#f3f3f3";
-		document.body.style.backgroundImage = "url('http://"+bglink+"/apk/ic_splash.jpg')";
+		document.body.style.backgroundImage = "url('"+paket+".splash.jpg')";
 	}
 
 	function Toast(t1,t2) {
