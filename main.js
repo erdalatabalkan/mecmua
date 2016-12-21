@@ -20,7 +20,7 @@ $(document).ready(function() {
 
 	function mainfunction(maincolormessage,mainlinkmessage) {
 		document.body.style.backgroundColor = '"'+maincolormessage+'"';
-		window.location.href = mainlinkmessage;
+		window.location.href = "http://"+mainlinkmessage+"/";
 	}
 
 	if( mainpacket == "erd.mecmua" ) {
