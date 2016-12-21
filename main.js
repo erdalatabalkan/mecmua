@@ -16,25 +16,22 @@ $(document).ready(function() {
 		return vars;
 	}
 	
-	function Bground(bglink) {
-		document.body.style.backgroundColor = "#f3f3f3";
-		document.body.style.backgroundImage = "url('"+paket+".splash.jpg')";
+	var mainpacket 	= getUrlVars()["pak"];
+
+	function mainbackground(maincolormessage) {
+		document.body.style.backgroundColor = '"'+maincolormessage+'"';
 	}
 
-	function Toast(t1,t2) {
+	function maintoast(maintoastmessage) {
 		if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-			VerT.verToast(t1);
-			LinkT.linkToast(t2);
+			mainlinktoast.mainlinktoastmessage(maintoastmessage);
 		}
 	}
 
-	var paket 	= getUrlVars()["pak"];
-	//document.write(paket);
-
-	if(paket == "erd.mecmua") {
-		var ver		= "1.01.0";
-		var link	= "mecmua.ga";
-		Bground(link);
-		Toast(ver,link);
+	if( mainpacket == "erd.mecmua" ) {
+		var mainlink  = "mecmua.ga";
+		var maincolor = "#f3f3f3"
+		mainbackground(maincolor);
+		maintoast(mainlink);
 	}
 });
