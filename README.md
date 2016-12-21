@@ -1,0 +1,2 @@
+# mecmua
+Tarihi oku ! hareketidir..
