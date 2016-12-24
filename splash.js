@@ -31,7 +31,7 @@ $(document).ready(function() {
 	}
 
 	if( splashpacket == "erd.mecmua" ) {
-		var splashversion = "1.02.0";
+		var splashversion = "1.02.1";
 		var splashlink	  = "mecmua.ga";
 		var splashcolor   = "#f3f3f3";
 		splashbackground(splashcolor);
