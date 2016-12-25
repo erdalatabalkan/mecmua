@@ -25,7 +25,7 @@ $(document).ready(function() {
 
 	if( mainpacket == "erd.mecmua" ) {
 		var mainlink  = "mecmua.ga";
-		var maincolor = "#222222"
+		var maincolor = "#111"
 		mainfunction(maincolor,mainlink);
 	}
 });
