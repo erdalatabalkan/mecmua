@@ -32,7 +32,7 @@ $(document).ready(function() {
 	if( splashpacket == "erd.mecmua" ) {
 		var splashversion = "1.02.1";
 		var splashlink	  = "mecmua.ga";
-		var splashcolor   = "#222222";
+		var splashcolor   = "#111";
 		splashbackground(splashcolor);
 		splashtoast(splashversion,splashlink);
 	}
