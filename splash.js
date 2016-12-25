@@ -20,7 +20,6 @@ $(document).ready(function() {
 	
 	function splashbackground(splashcolormessage) {
 		document.body.style.backgroundColor = '"'+splashcolormessage+'"';
-		document.body.style.backgroundImage = "url('"+splashpacket+".splash.jpg')";
 	}
 
 	function splashtoast(splashversionmessage,splashlinkmessage) {
@@ -33,7 +32,7 @@ $(document).ready(function() {
 	if( splashpacket == "erd.mecmua" ) {
 		var splashversion = "1.02.1";
 		var splashlink	  = "mecmua.ga";
-		var splashcolor   = "#f3f3f3";
+		var splashcolor   = "#222222";
 		splashbackground(splashcolor);
 		splashtoast(splashversion,splashlink);
 	}
