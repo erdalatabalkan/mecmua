@@ -22,18 +22,16 @@ $(document).ready(function() {
 		document.body.style.backgroundColor = '"'+splashcolormessage+'"';
 	}
 
-	function splashtoast(splashversionmessage,splashlinkmessage) {
+	function splashtoast(splashversionmessage) {
 		if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
 			splashversiontoast.splashversiontoastmessage(splashversionmessage);
-			splashlinktoast.splashlinktoastmessage(splashlinkmessage);
 		}
 	}
 
 	if( splashpacket == "erd.mecmua" ) {
 		var splashversion = "1.02.5";
-		var splashlink	  = "https://www.mecmua.ga";
 		var splashcolor   = "#222";
 		splashbackground(splashcolor);
-		splashtoast(splashversion,splashlink);
+		splashtoast(splashversion);
 	}
 });
