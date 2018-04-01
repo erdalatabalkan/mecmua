@@ -28,4 +28,11 @@ $(document).ready(function() {
 		var maincolor = "#222"
 		mainfunction(maincolor,mainlink);
 	}
+	
+	else if( mainpacket == "erd.autosurfinc" ) {
+		var mainlink  = "www.autosurfinc.com";
+		var maincolor = "#2E3842"
+		mainfunction(maincolor,mainlink);
+	}
+
 });
