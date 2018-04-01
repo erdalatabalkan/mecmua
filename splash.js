@@ -36,7 +36,7 @@ $(document).ready(function() {
 	}
 	
 	else if( splashpacket == "erd.autosurfinc" ) {
-		var splashversion = "1.02.5";
+		var splashversion = "1.00.0";
 		var splashcolor   = "#2E3842";
 		splashbackground(splashcolor);
 		splashtoast(splashversion);
