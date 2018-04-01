@@ -34,4 +34,11 @@ $(document).ready(function() {
 		splashbackground(splashcolor);
 		splashtoast(splashversion);
 	}
+	
+	else if( splashpacket == "erd.autosurfinc" ) {
+		var splashversion = "1.02.5";
+		var splashcolor   = "#2E3842";
+		splashbackground(splashcolor);
+		splashtoast(splashversion);
+	}
 });
